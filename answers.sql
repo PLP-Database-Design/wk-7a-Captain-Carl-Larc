@@ -5,6 +5,20 @@ CREATE TABLE ProductDetail_1NF (
     Product VARCHAR(255)
 );
 
+
+-- Insert the first order's products
+INSERT INTO ProductDetail_1NF (OrderID, CustomerName, Product) VALUES (101, 'John Doe', 'Laptop');
+INSERT INTO ProductDetail_1NF (OrderID, CustomerName, Product) VALUES (101, 'John Doe', 'Mouse');
+
+-- Insert the second order's products
+INSERT INTO ProductDetail_1NF (OrderID, CustomerName, Product) VALUES (102, 'Jane Smith', 'Tablet');
+INSERT INTO ProductDetail_1NF (OrderID, CustomerName, Product) VALUES (102, 'Jane Smith', 'Keyboard');
+INSERT INTO ProductDetail_1NF (OrderID, CustomerName, Product) VALUES (102, 'Jane Smith', 'Mouse');
+
+-- Insert the third order's product
+INSERT INTO ProductDetail_1NF (OrderID, CustomerName, Product) VALUES (103, 'Emily Clark', 'Phone');
+
+
 -- Create the Orders table
 CREATE TABLE Orders (
     OrderID INT PRIMARY KEY,
